@@ -1182,7 +1182,7 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "blurry, photo, drawing, horror, distorted, malformed, naked"
+        "blurry, photo, drawing, horror, distorted, malformed"
       ],
       "color": "#322",
       "bgcolor": "#533"
