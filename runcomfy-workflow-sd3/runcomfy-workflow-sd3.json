@@ -401,7 +401,7 @@
         "text": ""
       },
       "widgets_values": [
-        "The resolution should be around 1 megapixel (1 million pixels), with both the width and height being multiples of 64. For example, an image with a resolution of 1024 x 1024 pixels is approximately 1 megapixel. \nEnjoy ComfyUI Online for free, brought to you by 🌟 RunComfy! 🌟 Visit us at https://www.runcomfy.com."
+        "Enjoy ComfyUI Online for free, brought to you by 🌟 RunComfy! 🌟 Visit us at https://www.runcomfy.com. \nThe resolution should be around 1 megapixel (1 million pixels), with both the width and height being multiples of 64. For example, an image with a resolution of 1024 x 1024 pixels is approximately 1 megapixel. "
       ],
       "color": "#432",
       "bgcolor": "#653"
