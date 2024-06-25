@@ -384,7 +384,7 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "text, watermark, nsfw"
+        "text, watermark"
       ]
     },
     {
