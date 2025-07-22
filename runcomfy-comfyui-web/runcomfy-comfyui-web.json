@@ -392,14 +392,14 @@
     },
     {
       "id": 9,
-      "type": "SaveImage",
+      "type": "PreviewImage",
       "pos": [
         1270.63916015625,
         212.86460876464844
       ],
       "size": [
-        479.1731872558594,
-        443.19866943359375
+        299.8952941894531,
+        221.3476104736328
       ],
       "flags": {},
       "order": 12,
@@ -412,14 +412,10 @@
         }
       ],
       "outputs": [],
+      "title": "Preview Image-runcomfy",
       "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.40",
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "runcomfy"
-      ]
+        "Node name for S&R": "PreviewImage"
+      }
     },
     {
       "id": 26,
