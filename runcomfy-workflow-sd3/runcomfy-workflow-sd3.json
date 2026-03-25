@@ -151,7 +151,7 @@
         {
           "name": "seed",
           "type": "INT",
-          "link": 607,
+          "link": null,
           "widget": {
             "name": "seed"
           }
@@ -312,43 +312,6 @@
       ]
     },
     {
-      "id": 272,
-      "type": "PrimitiveNode",
-      "pos": [
-        -1270,
-        610
-      ],
-      "size": [
-        312.41905559033626,
-        82
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            597,
-            607
-          ],
-          "slot_index": 0,
-          "widget": {
-            "name": "seed"
-          }
-        }
-      ],
-      "title": "Seed",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        521116954032249,
-        "randomize"
-      ]
-    },
-    {
       "id": 135,
       "type": "EmptySD3LatentImage",
       "pos": [
@@ -401,7 +364,7 @@
         "text": ""
       },
       "widgets_values": [
-        "Enjoy ComfyUI Online for free, brought to you by 🌟 RunComfy! 🌟 Visit us at https://www.runcomfy.com. \nThe resolution should be around 1 megapixel (1 million pixels), with both the width and height being multiples of 64. For example, an image with a resolution of 1024 x 1024 pixels is approximately 1 megapixel. "
+        "Enjoy ComfyUI Online for free, brought to you by \ud83c\udf1f RunComfy! \ud83c\udf1f Visit us at https://www.runcomfy.com. \nThe resolution should be around 1 megapixel (1 million pixels), with both the width and height being multiples of 64. For example, an image with a resolution of 1024 x 1024 pixels is approximately 1 megapixel. "
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -727,7 +690,7 @@
         {
           "name": "seed",
           "type": "INT",
-          "link": 597,
+          "link": null,
           "widget": {
             "name": "seed"
           },
@@ -873,14 +836,6 @@
       "LATENT"
     ],
     [
-      597,
-      272,
-      0,
-      271,
-      4,
-      "INT"
-    ],
-    [
       601,
       231,
       0,
@@ -927,14 +882,6 @@
       274,
       5,
       "UPSCALE_MODEL"
-    ],
-    [
-      607,
-      272,
-      0,
-      274,
-      6,
-      "INT"
     ],
     [
       608,
