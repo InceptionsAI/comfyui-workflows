@@ -173,6 +173,8 @@
       },
       "widgets_values": [
         2,
+        0,
+        "fixed",
         15,
         5,
         "dpmpp_2m",
