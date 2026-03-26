@@ -25,7 +25,7 @@
         {
           "name": "text",
           "type": "STRING",
-          "link": 21,
+          "link": null,
           "widget": {
             "name": "text"
           },
@@ -74,7 +74,7 @@
         {
           "name": "text",
           "type": "STRING",
-          "link": 22,
+          "link": null,
           "widget": {
             "name": "text"
           },
@@ -99,82 +99,6 @@
       ],
       "color": "#322",
       "bgcolor": "#533"
-    },
-    {
-      "id": 14,
-      "type": "PrimitiveNode",
-      "pos": [
-        143.96681882862418,
-        493.4909270037193
-      ],
-      "size": {
-        "0": 300,
-        "1": 160
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            18,
-            22
-          ],
-          "widget": {
-            "name": "text"
-          },
-          "slot_index": 0
-        }
-      ],
-      "title": "Negative Prompt (Text)",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        "text, watermark"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 13,
-      "type": "PrimitiveNode",
-      "pos": [
-        143.96681882862418,
-        293.4909270037194
-      ],
-      "size": {
-        "0": 300,
-        "1": 160
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            16,
-            21
-          ],
-          "widget": {
-            "name": "text"
-          },
-          "slot_index": 0
-        }
-      ],
-      "title": "Positive Prompt (Text)",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        "evening sunset scenery blue sky nature, glass bottle with a galaxy in it"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
     },
     {
       "id": 36,
@@ -354,7 +278,7 @@
         {
           "name": "text",
           "type": "STRING",
-          "link": 16,
+          "link": null,
           "widget": {
             "name": "text"
           },
@@ -403,7 +327,7 @@
         {
           "name": "text",
           "type": "STRING",
-          "link": 18,
+          "link": null,
           "widget": {
             "name": "text"
           },
@@ -585,83 +509,6 @@
       "bgcolor": "#000"
     },
     {
-      "id": 47,
-      "type": "PrimitiveNode",
-      "pos": [
-        1037.5286840013239,
-        881.6113881513106
-      ],
-      "size": {
-        "0": 210,
-        "1": 80
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            43,
-            44
-          ],
-          "widget": {
-            "name": "end_at_step"
-          },
-          "slot_index": 0
-        }
-      ],
-      "title": "end_at_step",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        20,
-        "fixed"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 45,
-      "type": "PrimitiveNode",
-      "pos": [
-        1039.5286840013239,
-        734.6113881513106
-      ],
-      "size": {
-        "0": 210,
-        "1": 80
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            38,
-            41
-          ],
-          "widget": {
-            "name": "steps"
-          }
-        }
-      ],
-      "title": "steps",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        25,
-        "fixed"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 48,
       "type": "Note",
       "pos": [
@@ -722,7 +569,7 @@
         {
           "name": "steps",
           "type": "INT",
-          "link": 41,
+          "link": null,
           "widget": {
             "name": "steps"
           },
@@ -731,7 +578,7 @@
         {
           "name": "end_at_step",
           "type": "INT",
-          "link": 43,
+          "link": null,
           "widget": {
             "name": "end_at_step"
           },
@@ -807,7 +654,7 @@
         {
           "name": "steps",
           "type": "INT",
-          "link": 38,
+          "link": null,
           "widget": {
             "name": "steps"
           },
@@ -816,7 +663,7 @@
         {
           "name": "start_at_step",
           "type": "INT",
-          "link": 44,
+          "link": null,
           "widget": {
             "name": "start_at_step"
           }
@@ -961,7 +808,7 @@
         "text": ""
       },
       "widgets_values": [
-        "\nExperience ComfyUI Online for free — no installation required, brought to you by 🌟 RunComfy! 🌟 Visit us at https://www.runcomfy.com/"
+        "\nExperience ComfyUI Online for free \u2014 no installation required, brought to you by \ud83c\udf1f RunComfy! \ud83c\udf1f Visit us at https://www.runcomfy.com/"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1025,22 +872,6 @@
       "MODEL"
     ],
     [
-      16,
-      13,
-      0,
-      6,
-      1,
-      "STRING"
-    ],
-    [
-      18,
-      14,
-      0,
-      7,
-      1,
-      "STRING"
-    ],
-    [
       19,
       12,
       1,
@@ -1055,22 +886,6 @@
       16,
       0,
       "CLIP"
-    ],
-    [
-      21,
-      13,
-      0,
-      15,
-      1,
-      "STRING"
-    ],
-    [
-      22,
-      14,
-      0,
-      16,
-      1,
-      "STRING"
     ],
     [
       23,
@@ -1119,38 +934,6 @@
       17,
       1,
       "VAE"
-    ],
-    [
-      38,
-      45,
-      0,
-      11,
-      4,
-      "INT"
-    ],
-    [
-      41,
-      45,
-      0,
-      10,
-      4,
-      "INT"
-    ],
-    [
-      43,
-      47,
-      0,
-      10,
-      5,
-      "INT"
-    ],
-    [
-      44,
-      47,
-      0,
-      11,
-      5,
-      "INT"
     ]
   ],
   "groups": [

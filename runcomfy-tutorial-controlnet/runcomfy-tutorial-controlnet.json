@@ -69,7 +69,7 @@
         {
           "name": "seed",
           "type": "INT",
-          "link": 6,
+          "link": null,
           "widget": {
             "name": "seed"
           }
@@ -372,7 +372,7 @@
     },
     {
       "id": 1,
-      "type": "CheckpointLoaderSimpleWithNoiseSelect",
+      "type": "CheckpointLoaderSimple",
       "pos": [
         120,
         350
@@ -412,13 +412,10 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "CheckpointLoaderSimpleWithNoiseSelect"
+        "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
-        "helloyoung25d_V10f.safetensors",
-        "sqrt_linear (AnimateDiff)",
-        false,
-        0.18215
+        "helloyoung25d_V10f.safetensors"
       ]
     },
     {
@@ -455,42 +452,6 @@
       ]
     },
     {
-      "id": 5,
-      "type": "PrimitiveNode",
-      "pos": [
-        120,
-        740
-      ],
-      "size": {
-        "0": 210,
-        "1": 82
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            6
-          ],
-          "slot_index": 0,
-          "widget": {
-            "name": "seed"
-          }
-        }
-      ],
-      "title": "Seed",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        0,
-        "fixed"
-      ]
-    },
-    {
       "id": 103,
       "type": "Note",
       "pos": [
@@ -508,7 +469,7 @@
         "text": ""
       },
       "widgets_values": [
-        "Experience the ControlNet workflow with our comprehensive tutorial! You can also customize your workflow to discover more about ControlNet! 😊\n\nFor more workflows with stunning visuals, visit\n✨RunComfy✨ at https://www.runcomfy.com/"
+        "Experience the ControlNet workflow with our comprehensive tutorial! You can also customize your workflow to discover more about ControlNet! \ud83d\ude0a\n\nFor more workflows with stunning visuals, visit\n\u2728RunComfy\u2728 at https://www.runcomfy.com/"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -670,14 +631,6 @@
       6,
       0,
       "CLIP"
-    ],
-    [
-      6,
-      5,
-      0,
-      7,
-      4,
-      "INT"
     ],
     [
       9,
