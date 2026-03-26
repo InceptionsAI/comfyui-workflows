@@ -33,6 +33,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
+            601,
             608
           ],
           "shape": 3,
@@ -70,6 +71,128 @@
       ]
     },
     {
+      "id": 275,
+      "type": "UpscaleModelLoader",
+      "pos": [
+        210,
+        -240
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "links": [
+            606
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "4x-UltraSharp.pth"
+      ]
+    },
+    {
+      "id": 274,
+      "type": "UltimateSDUpscale",
+      "pos": [
+        210,
+        -100
+      ],
+      "size": [
+        308.38125891806055,
+        619.0058963811769
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 601
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 602
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 603
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 604
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 605
+        },
+        {
+          "name": "upscale_model",
+          "type": "UPSCALE_MODEL",
+          "link": 606,
+          "slot_index": 5
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "seed"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            609
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UltimateSDUpscale"
+      },
+      "widgets_values": [
+        2,
+        15,
+        5,
+        "dpmpp_2m",
+        "sgm_uniform",
+        0.15,
+        "Chess",
+        1024,
+        1024,
+        8,
+        32,
+        "None",
+        1,
+        64,
+        8,
+        16,
+        true,
+        false
+      ]
+    },
+    {
       "id": 252,
       "type": "CheckpointLoaderSimple",
       "pos": [
@@ -104,7 +227,8 @@
           "name": "VAE",
           "type": "VAE",
           "links": [
-            557
+            557,
+            605
           ],
           "shape": 3,
           "slot_index": 2
@@ -115,8 +239,7 @@
       },
       "widgets_values": [
         "sd3m/sd3_medium.safetensors"
-      ],
-      "inputs": []
+      ]
     },
     {
       "id": 13,
@@ -146,7 +269,8 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            591
+            591,
+            602
           ],
           "shape": 3,
           "slot_index": 0
@@ -157,6 +281,32 @@
       },
       "widgets_values": [
         3
+      ]
+    },
+    {
+      "id": 277,
+      "type": "SaveImage",
+      "pos": [
+        547,
+        -100
+      ],
+      "size": [
+        528.3097183024333,
+        612.6225669020337
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 609
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "1089"
       ]
     },
     {
@@ -215,8 +365,7 @@
         "Enjoy ComfyUI Online for free, brought to you by \ud83c\udf1f RunComfy! \ud83c\udf1f Visit us at https://www.runcomfy.com. \nThe resolution should be around 1 megapixel (1 million pixels), with both the width and height being multiples of 64. For example, an image with a resolution of 1024 x 1024 pixels is approximately 1 megapixel. "
       ],
       "color": "#432",
-      "bgcolor": "#653",
-      "inputs": []
+      "bgcolor": "#653"
     },
     {
       "id": 67,
@@ -364,7 +513,8 @@
           "type": "CONDITIONING",
           "links": [
             93,
-            580
+            580,
+            604
           ],
           "shape": 3,
           "slot_index": 0
@@ -406,7 +556,8 @@
           "name": "CONDITIONING",
           "type": "CONDITIONING",
           "links": [
-            595
+            595,
+            603
           ],
           "shape": 3,
           "slot_index": 0
@@ -454,8 +605,7 @@
         "sd3m/clip_g.safetensors",
         "sd3m/clip_l.safetensors",
         "sd3m/t5xxl_fp8_e4m3fn.safetensors"
-      ],
-      "inputs": []
+      ]
     },
     {
       "id": 69,
@@ -539,6 +689,9 @@
           "name": "seed",
           "type": "INT",
           "link": null,
+          "widget": {
+            "name": "seed"
+          },
           "slot_index": 4
         }
       ],
@@ -681,10 +834,66 @@
       "LATENT"
     ],
     [
+      601,
+      231,
+      0,
+      274,
+      0,
+      "IMAGE"
+    ],
+    [
+      602,
+      13,
+      0,
+      274,
+      1,
+      "MODEL"
+    ],
+    [
+      603,
+      6,
+      0,
+      274,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      604,
+      71,
+      0,
+      274,
+      3,
+      "CONDITIONING"
+    ],
+    [
+      605,
+      252,
+      2,
+      274,
+      4,
+      "VAE"
+    ],
+    [
+      606,
+      275,
+      0,
+      274,
+      5,
+      "UPSCALE_MODEL"
+    ],
+    [
       608,
       231,
       0,
       276,
+      0,
+      "IMAGE"
+    ],
+    [
+      609,
+      274,
+      0,
+      277,
       0,
       "IMAGE"
     ]
