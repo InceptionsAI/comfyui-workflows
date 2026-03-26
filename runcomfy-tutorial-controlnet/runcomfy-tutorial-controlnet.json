@@ -412,7 +412,7 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "CheckpointLoaderSimpleWithNoiseSelect"
+        "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
         "helloyoung25d_V10f.safetensors"
